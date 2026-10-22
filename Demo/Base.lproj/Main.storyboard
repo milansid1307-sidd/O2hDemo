@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LVC-01-log">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+
+        <!-- ======================================================== -->
+        <!-- Login View Controller                                      -->
+        <!-- ======================================================== -->
+        <scene sceneID="LVC-sc-001">
+            <objects>
+                <viewController id="LVC-01-log" customClass="LoginViewController" customModule="Demo" customModuleProvider="target" storyboardIdentifier="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LVC-02-vw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-10-img">
+                                <rect key="frame" x="146.5" y="180" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-11-ttl">
+                                <rect key="frame" x="20" y="304" width="353" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover and save beautiful wallpapers" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-12-sub">
+                                <rect key="frame" x="48" y="357" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-13-btn">
+                                <rect key="frame" x="40" y="720" width="313" height="52"/>
+                                <state key="normal" title="Sign in with Google"/>
+                                <connections>
+                                    <action selector="googleSignInButtonTapped:" destination="LVC-01-log" eventType="touchUpInside" id="LVC-14-act"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-15-act">
+                                <rect key="frame" x="180.5" y="660" width="32" height="32"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LVC-sa-gde"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LVC-10-img" firstAttribute="centerX" secondItem="LVC-02-vw" secondAttribute="centerX" id="LVC-c01"/>
+                            <constraint firstItem="LVC-10-img" firstAttribute="top" secondItem="LVC-sa-gde" secondAttribute="top" constant="100" id="LVC-c02"/>
+                            <constraint firstItem="LVC-10-img" firstAttribute="width" constant="100" id="LVC-c03"/>
+                            <constraint firstItem="LVC-10-img" firstAttribute="height" constant="100" id="LVC-c04"/>
+                            <constraint firstItem="LVC-11-ttl" firstAttribute="centerX" secondItem="LVC-02-vw" secondAttribute="centerX" id="LVC-c05"/>
+                            <constraint firstItem="LVC-11-ttl" firstAttribute="top" secondItem="LVC-10-img" secondAttribute="bottom" constant="24" id="LVC-c06"/>
+                            <constraint firstItem="LVC-11-ttl" firstAttribute="leading" secondItem="LVC-02-vw" secondAttribute="leading" constant="20" id="LVC-c07"/>
+                            <constraint firstItem="LVC-02-vw" firstAttribute="trailing" secondItem="LVC-11-ttl" secondAttribute="trailing" constant="20" id="LVC-c08"/>
+                            <constraint firstItem="LVC-12-sub" firstAttribute="centerX" secondItem="LVC-02-vw" secondAttribute="centerX" id="LVC-c09"/>
+                            <constraint firstItem="LVC-12-sub" firstAttribute="top" secondItem="LVC-11-ttl" secondAttribute="bottom" constant="8" id="LVC-c10"/>
+                            <constraint firstItem="LVC-12-sub" firstAttribute="leading" secondItem="LVC-02-vw" secondAttribute="leading" constant="48" id="LVC-c11"/>
+                            <constraint firstItem="LVC-02-vw" firstAttribute="trailing" secondItem="LVC-12-sub" secondAttribute="trailing" constant="48" id="LVC-c12"/>
+                            <constraint firstItem="LVC-15-act" firstAttribute="centerX" secondItem="LVC-02-vw" secondAttribute="centerX" id="LVC-c13"/>
+                            <constraint firstItem="LVC-15-act" firstAttribute="bottom" secondItem="LVC-13-btn" secondAttribute="top" constant="-16" id="LVC-c14"/>
+                            <constraint firstItem="LVC-13-btn" firstAttribute="centerX" secondItem="LVC-02-vw" secondAttribute="centerX" id="LVC-c15"/>
+                            <constraint firstItem="LVC-13-btn" firstAttribute="leading" secondItem="LVC-02-vw" secondAttribute="leading" constant="40" id="LVC-c16"/>
+                            <constraint firstItem="LVC-02-vw" firstAttribute="trailing" secondItem="LVC-13-btn" secondAttribute="trailing" constant="40" id="LVC-c17"/>
+                            <constraint firstItem="LVC-13-btn" firstAttribute="height" constant="52" id="LVC-c18"/>
+                            <constraint firstItem="LVC-sa-gde" firstAttribute="bottom" secondItem="LVC-13-btn" secondAttribute="bottom" constant="60" id="LVC-c19"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView"      destination="LVC-10-img" id="LVC-o01"/>
+                        <outlet property="appTitleLabel"      destination="LVC-11-ttl" id="LVC-o02"/>
+                        <outlet property="subtitleLabel"      destination="LVC-12-sub" id="LVC-o03"/>
+                        <outlet property="googleSignInButton" destination="LVC-13-btn" id="LVC-o04"/>
+                        <outlet property="activityIndicator"  destination="LVC-15-act" id="LVC-o05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVC-fr-001" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0" y="0"/>
+        </scene>
+
+        <!-- ======================================================== -->
+        <!-- Gallery View Controller                                    -->
+        <!-- ======================================================== -->
+        <scene sceneID="GVC-sc-001">
+            <objects>
+                <viewController id="GVC-01-gvc" customClass="GalleryViewController" customModule="Demo" customModuleProvider="target" storyboardIdentifier="GalleryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GVC-02-vw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVC-10-col">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" id="GVC-fl-001">
+                                    <size key="itemSize" width="185" height="185"/>
+                                    <size key="headerReferenceSize" width="0" height="0"/>
+                                    <size key="footerReferenceSize" width="0" height="0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVC-11-ban">
+                                <rect key="frame" x="16" y="-44" width="361" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet — showing cached content" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVC-12-lbl">
+                                        <rect key="frame" x="8" y="8" width="345" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.584" blue="0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GVC-12-lbl" firstAttribute="top"      secondItem="GVC-11-ban" secondAttribute="top"      constant="8" id="GVC-bc1"/>
+                                    <constraint firstItem="GVC-12-lbl" firstAttribute="leading"  secondItem="GVC-11-ban" secondAttribute="leading"  constant="8" id="GVC-bc2"/>
+                                    <constraint firstItem="GVC-11-ban" firstAttribute="trailing" secondItem="GVC-12-lbl" secondAttribute="trailing" constant="8" id="GVC-bc3"/>
+                                    <constraint firstItem="GVC-11-ban" firstAttribute="bottom"   secondItem="GVC-12-lbl" secondAttribute="bottom"   constant="8" id="GVC-bc4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GVC-sa-gde"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GVC-10-col" firstAttribute="top"      secondItem="GVC-02-vw" secondAttribute="top"      id="GVC-c01"/>
+                            <constraint firstItem="GVC-10-col" firstAttribute="leading"  secondItem="GVC-02-vw" secondAttribute="leading"  id="GVC-c02"/>
+                            <constraint firstItem="GVC-02-vw"  firstAttribute="trailing" secondItem="GVC-10-col" secondAttribute="trailing" id="GVC-c03"/>
+                            <constraint firstItem="GVC-02-vw"  firstAttribute="bottom"   secondItem="GVC-10-col" secondAttribute="bottom"   id="GVC-c04"/>
+                            <constraint firstItem="GVC-11-ban" firstAttribute="top"      secondItem="GVC-sa-gde" secondAttribute="top"      constant="-44" id="GVC-c05"/>
+                            <constraint firstItem="GVC-11-ban" firstAttribute="leading"  secondItem="GVC-02-vw"  secondAttribute="leading"  constant="16"  id="GVC-c06"/>
+                            <constraint firstItem="GVC-02-vw"  firstAttribute="trailing" secondItem="GVC-11-ban" secondAttribute="trailing" constant="16"  id="GVC-c07"/>
+                            <constraint firstItem="GVC-11-ban" firstAttribute="height"   constant="36" id="GVC-c08"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView"     destination="GVC-10-col" id="GVC-o01"/>
+                        <outlet property="offlineBannerView"  destination="GVC-11-ban" id="GVC-o02"/>
+                        <outlet property="offlineBannerLabel" destination="GVC-12-lbl" id="GVC-o03"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVC-fr-001" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="0"/>
+        </scene>
+
+        <!-- ======================================================== -->
+        <!-- Profile View Controller                                    -->
+        <!-- ======================================================== -->
+        <scene sceneID="PVC-sc-001">
+            <objects>
+                <viewController id="PVC-01-pvc" customClass="ProfileViewController" customModule="Demo" customModuleProvider="target" storyboardIdentifier="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PVC-02-vw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-10-ava">
+                                <rect key="frame" x="146.5" y="160" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-11-img">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JD" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-12-ini">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.259" green="0.522" blue="0.957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PVC-11-img" firstAttribute="top"      secondItem="PVC-10-ava" secondAttribute="top"      id="PVC-ac1"/>
+                                    <constraint firstItem="PVC-11-img" firstAttribute="leading"  secondItem="PVC-10-ava" secondAttribute="leading"  id="PVC-ac2"/>
+                                    <constraint firstItem="PVC-11-img" firstAttribute="trailing" secondItem="PVC-10-ava" secondAttribute="trailing" id="PVC-ac3"/>
+                                    <constraint firstItem="PVC-11-img" firstAttribute="bottom"   secondItem="PVC-10-ava" secondAttribute="bottom"   id="PVC-ac4"/>
+                                    <constraint firstItem="PVC-12-ini" firstAttribute="top"      secondItem="PVC-10-ava" secondAttribute="top"      id="PVC-ac5"/>
+                                    <constraint firstItem="PVC-12-ini" firstAttribute="leading"  secondItem="PVC-10-ava" secondAttribute="leading"  id="PVC-ac6"/>
+                                    <constraint firstItem="PVC-12-ini" firstAttribute="trailing" secondItem="PVC-10-ava" secondAttribute="trailing" id="PVC-ac7"/>
+                                    <constraint firstItem="PVC-12-ini" firstAttribute="bottom"   secondItem="PVC-10-ava" secondAttribute="bottom"   id="PVC-ac8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-13-nam">
+                                <rect key="frame" x="20" y="280" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="john.doe@gmail.com" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-14-eml">
+                                <rect key="frame" x="20" y="318" width="353" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-15-btn">
+                                <rect key="frame" x="40" y="740" width="313" height="52"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="PVC-01-pvc" eventType="touchUpInside" id="PVC-act-01"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PVC-sa-gde"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PVC-10-ava" firstAttribute="centerX"  secondItem="PVC-02-vw"  secondAttribute="centerX"  id="PVC-c01"/>
+                            <constraint firstItem="PVC-10-ava" firstAttribute="top"      secondItem="PVC-sa-gde" secondAttribute="top"      constant="60"  id="PVC-c02"/>
+                            <constraint firstItem="PVC-10-ava" firstAttribute="width"    constant="100" id="PVC-c03"/>
+                            <constraint firstItem="PVC-10-ava" firstAttribute="height"   constant="100" id="PVC-c04"/>
+                            <constraint firstItem="PVC-13-nam" firstAttribute="centerX"  secondItem="PVC-02-vw"  secondAttribute="centerX"  id="PVC-c05"/>
+                            <constraint firstItem="PVC-13-nam" firstAttribute="top"      secondItem="PVC-10-ava" secondAttribute="bottom"   constant="20" id="PVC-c06"/>
+                            <constraint firstItem="PVC-13-nam" firstAttribute="leading"  secondItem="PVC-02-vw"  secondAttribute="leading"  constant="20" id="PVC-c07"/>
+                            <constraint firstItem="PVC-02-vw"  firstAttribute="trailing" secondItem="PVC-13-nam" secondAttribute="trailing" constant="20" id="PVC-c08"/>
+                            <constraint firstItem="PVC-14-eml" firstAttribute="centerX"  secondItem="PVC-02-vw"  secondAttribute="centerX"  id="PVC-c09"/>
+                            <constraint firstItem="PVC-14-eml" firstAttribute="top"      secondItem="PVC-13-nam" secondAttribute="bottom"   constant="6"  id="PVC-c10"/>
+                            <constraint firstItem="PVC-14-eml" firstAttribute="leading"  secondItem="PVC-02-vw"  secondAttribute="leading"  constant="20" id="PVC-c11"/>
+                            <constraint firstItem="PVC-02-vw"  firstAttribute="trailing" secondItem="PVC-14-eml" secondAttribute="trailing" constant="20" id="PVC-c12"/>
+                            <constraint firstItem="PVC-15-btn" firstAttribute="centerX"  secondItem="PVC-02-vw"  secondAttribute="centerX"  id="PVC-c13"/>
+                            <constraint firstItem="PVC-15-btn" firstAttribute="leading"  secondItem="PVC-02-vw"  secondAttribute="leading"  constant="40" id="PVC-c14"/>
+                            <constraint firstItem="PVC-02-vw"  firstAttribute="trailing" secondItem="PVC-15-btn" secondAttribute="trailing" constant="40" id="PVC-c15"/>
+                            <constraint firstItem="PVC-15-btn" firstAttribute="height"   constant="52" id="PVC-c16"/>
+                            <constraint firstItem="PVC-sa-gde" firstAttribute="bottom"   secondItem="PVC-15-btn" secondAttribute="bottom"   constant="60" id="PVC-c17"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarContainerView" destination="PVC-10-ava" id="PVC-o01"/>
+                        <outlet property="avatarImageView"     destination="PVC-11-img" id="PVC-o02"/>
+                        <outlet property="initialsLabel"       destination="PVC-12-ini" id="PVC-o03"/>
+                        <outlet property="nameLabel"           destination="PVC-13-nam" id="PVC-o04"/>
+                        <outlet property="emailLabel"          destination="PVC-14-eml" id="PVC-o05"/>
+                        <outlet property="logoutButton"        destination="PVC-15-btn" id="PVC-o06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVC-fr-001" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="500"/>
+        </scene>
+
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.949" green="0.949" blue="0.969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
